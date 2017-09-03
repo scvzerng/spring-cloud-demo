@@ -1,0 +1,5 @@
+rootProject.name = 'root'
+include 'utils','service_demo'
+findProject(':service_demo')?.name = 'service-demo'
+
+
