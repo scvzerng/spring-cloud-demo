@@ -1,5 +1,11 @@
 rootProject.name = 'root'
-include 'utils','service_demo'
-findProject(':service_demo')?.name = 'service-demo'
-
+include 'utils'
+include 'service_provider'
+include 'register'
+findProject(':service_provider')?.name = 'service-provider'
+include 'service_consumer'
+findProject(':service_consumer')?.name = 'service-consumer'
+include 'config_server'
+findProject(':config_server')?.name = 'config-server'
+include 'zuul'
 

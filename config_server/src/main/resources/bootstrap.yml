@@ -1,0 +1,17 @@
+server:
+  port: 8040
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+spring:
+  config:
+      name: config_server
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/scvzerng/spring-cloud-config/     # 配置git仓库的地址
+          search-paths: spring-cloud-config-server          # git仓库地址下的相对地址，可以配置多个，用,分割。

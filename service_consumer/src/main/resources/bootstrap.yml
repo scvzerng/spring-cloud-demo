@@ -1,0 +1,21 @@
+eureka:
+  client:
+    healthcheck:
+             enable: true
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+spring:
+   application:
+       name: spring-cloud-demo-service-consumer
+   cloud:
+      config:
+          discovery:
+               enabled: true
+               serviceId: spring-cloud-config-server
+          profile: dev
+          server:
+             overrides:
+server:
+   port: 9000
+
+

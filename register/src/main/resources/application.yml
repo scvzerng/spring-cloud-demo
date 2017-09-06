@@ -1,0 +1,13 @@
+eureka:
+  server:
+     enableSelfPreservation: false # 关闭自我保护
+     evictionIntervalTimerInMs: 1000 # 驱逐间隔
+  instance:
+    hostname: localhost #实例域名
+  client:
+    registerWithEureka: false #是否把自身注册到eureka
+    healthcheck:
+             enable: true # 启用健康检查
+    fetchRegistry: false #获取注册表
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #默认地址
