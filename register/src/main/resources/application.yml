@@ -1,6 +1,6 @@
 eureka:
   server:
-     enableSelfPreservation: false # 关闭自我保护
+     enableSelfPreservation: true # 关闭自我保护
      evictionIntervalTimerInMs: 1000 # 驱逐间隔
   instance:
     hostname: localhost #实例域名

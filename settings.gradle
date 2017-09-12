@@ -8,4 +8,3 @@ findProject(':service_consumer')?.name = 'service-consumer'
 include 'config_server'
 findProject(':config_server')?.name = 'config-server'
 include 'zuul'
-

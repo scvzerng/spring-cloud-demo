@@ -1,7 +1,5 @@
 eureka:
   client:
-    healthcheck:
-             enable: true
     serviceUrl:
       defaultZone: http://localhost:8762/eureka/
 spring:
@@ -16,6 +14,8 @@ spring:
           server:
              overrides:
 server:
-   port: 9000
+   port: 9002
+
+
 
 

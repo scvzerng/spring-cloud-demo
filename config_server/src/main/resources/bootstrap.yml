@@ -1,3 +1,4 @@
+
 server:
   port: 8040
 eureka:
@@ -14,4 +15,12 @@ spring:
       server:
         git:
           uri: https://github.com/scvzerng/spring-cloud-config/     # 配置git仓库的地址
-          search-paths: spring-cloud-config-server          # git仓库地址下的相对地址，可以配置多个，用,分割。
+          search-paths: spring-cloud-config-server
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          zkNodes: localhost:2181
+management:
+  security:
+    enabled: false        # git仓库地址下的相对地址，可以配置多个，用,分割。

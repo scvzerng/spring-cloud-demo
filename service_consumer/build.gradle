@@ -1,4 +1,5 @@
 dependencies{
     compile 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
     compile 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    compile 'org.springframework.cloud:spring-cloud-starter-bus-kafka'
 }

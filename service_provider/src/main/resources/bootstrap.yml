@@ -1,0 +1,14 @@
+server:
+    port: 9001
+spring:
+    application:
+            name: spring-cloud-demo-service-provider
+eureka:
+    instanse:
+        leaseRenewalIntervalInSeconds: 1
+        leaseExpirationDurationInSeconds: 2
+    client:
+       healthcheck:
+              enable: true
+       serviceUrl:
+              defaultZone: http://localhost:8762/eureka/
